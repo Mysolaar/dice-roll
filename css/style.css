@@ -71,9 +71,8 @@ input {
 .container {
     align-items: center;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 30px 20px;
     background-color: hsl(36, 100%, 90%, 75%);
-    padding-bottom: 30px;
 }
 
 .result__txt {
