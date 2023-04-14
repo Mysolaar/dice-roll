@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/ice-ge8dfd61d0_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1 {
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+button {
+    width: 100px;
+    height: 55px;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    outline: none;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid orangered;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid orangered;
+}
+
+select {
+    height: 35px;
+    width: 100px;
+    padding-left: 20px;
+    font-weight: 700;
+}
+
+input {
+    height: 35px;
+    width: 100px;
+    padding-left: 20px;
+    font-weight: 700;
+}
+
+.container {
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: hsl(36, 100%, 90%, 75%);
+    padding-bottom: 30px;
+}
+
+.result__txt {
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    padding: 40px;
+}
+
+.total-roll {
+    font-weight: 700;
+    color: orangered;
+}

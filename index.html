@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Roll Your Dice !</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Dice Roll App</h1>
+            <p>Click the button to roll the dice:</p>
+            <button onclick="rollDice()">Roll Dice</button>
+            <div id="result"></div>
+            <div class="select__box">
+                <div>
+                    <p>Select a dice type:</p>
+                    <select id="diceType" onchange="updateDiceType()">
+                        <option value="d4">d4</option>
+                        <option value="d6">d6</option>
+                        <option value="d8">d8</option>
+                        <option value="d10">d10</option>
+                        <option value="d12">d12</option>
+                        <option value="d20">d20</option>
+                        <option value="d100">d100</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Enter the number of rolls:</p>
+                    <input type="number" id="numRolls" value="1" min="1">
+                </div>
+            </div>
+            <p>Enter a number to add to the sum:</p>
+            <input type="number" id="numToAdd" value="0">
+            
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>
